@@ -124,3 +124,114 @@ nav {
   transform: scale(1.2);
   transition-duration: 0.3s;
 }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7ab856224265583.680813b7b7754.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-title-emphasis {
+  background-color: rgba(56, 63, 83, 0.6); padding: 10px 0px 10px 25px;
+}
+
+.hero-fade {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%);
+  position: relative;
+  padding: 20px;
+  box-shadow: inset 0 -6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  bottom: 0;
+}
+
+.hero-title {
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Btn custom (Conheça a Nação) */
+* {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+ 
+.btnfos {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 45px;
+  max-width: 200px;
+  margin: 0 auto 2em;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 400;
+  font-family: "Inconsolata", monospace;
+}
+
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+
+.btnfos-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  background: rgba(225, 51, 45, 0);
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
