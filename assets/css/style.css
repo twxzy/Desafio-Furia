@@ -99,3 +99,28 @@ nav {
 .draw-btn:hover {
   color: white;
 }
+
+/* Navbar Vertical */
+.navbar-vertical {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+}
+
+.navbar-vertical a {
+  font-size: 22px;
+  color: white;
+  margin: 6px;
+  padding: 3px;
+  transition-duration: 0.3s;
+}
+
+.navbar-vertical a:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
