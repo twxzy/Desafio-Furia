@@ -101,7 +101,7 @@
   </section>
 
   <!-- Comunidade -->
-  <section id="sobre" class="story">
+  <section class="story">
     <div class="story-txt">
       <p>O sucesso é mais doce quando compartilhado.</p>
 
@@ -224,7 +224,7 @@
         </div>
       </div>
   
-      <!-- 07 Esquerda -->
+      <!-- 07  Esquerda -->
       <div class="agenda-item agenda-left">
         <div class="agenda-content">
           <div class="agenda-date">28/08</div>
@@ -242,6 +242,80 @@
     </section>
   </section>
 
+  <!-- Loja -->
+  <section id="loja" class="loja">
+    <div class="loja-img">
+      <!-- Imagem pode ser adicionada aqui, se necessário -->
+    </div>
+
+    <div class="loja-txt">
+      <h1>
+        Leve o espírito competitivo da Furia para o seu dia a dia.
+      </h1>
+      <p>Cada peça carrega a identidade de quem vive o jogo com intensidade.</p>
+
+      <div class="loja-txt-btn">
+        <a target="_blank" href="https://www.furia.gg/produtos">Compre Agora</a>
+        <a target="_blank" href="https://www.furia.gg/collections">Collections</a>
+      </div>
+
+      <!-- Carrossel de produtos -->
+      <div class="container-card">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+            <!-- Slides de produtos -->
+            <a target="_blank" href="https://www.furia.gg/produto/moletom-furia-x-champion-college-preto-150174"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/moletom-black-01.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/moletom-furia-x-champion-college-preto-150174"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/moletom-black-02.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/moletom-furia-x-champion-college-preto-150174"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/moletom-black-03.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/camiseta-furia-classic-preta-150183"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/camisa-01.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/camiseta-furia-classic-preta-150183"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/camisa-02.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/camiseta-furia-future-is-black-preta-150146"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/camisa-03.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/jaqueta-college-my-hero-academia-x-furia-azul-150230"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/moletom-azul-01.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/jaqueta-college-my-hero-academia-x-furia-azul-150230"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/moletom-azul-02.webp);">
+            </a>
+            <a target="_blank" href="https://www.furia.gg/produto/jaqueta-college-my-hero-academia-x-furia-azul-150230"
+              class="swiper-slide card-img-size"
+              style="background-image: url(assets/img/loja/moletom-azul-03.webp);">
+            </a>
+          </div>
+
+          <!-- Navegação do Swiper -->
+          <div class="swiper-navigation" style="width: 100%;">
+            <div class="swiper-pagination" style="display: flex; justify-content: end;"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- Scripts -->
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -257,6 +331,35 @@
       loop: true,
       showCursor: true,
       cursorChar: '|',
+    });
+  </script>
+
+  <!-- Swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+      centeredSlides: false,
+      loop: false,
+      grabCursor: true,
+      speed: 500,
+      sensitivity: 1,
+      resistanceRatio: 0.8,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   </script>
 

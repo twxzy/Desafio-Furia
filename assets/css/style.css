@@ -593,3 +593,212 @@ video {
 .agenda-event-02 {
   margin-top: 15px;
 }
+
+/* Loja */
+.loja{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 220px;
+}
+
+.loja-img{
+  background-image: url('../img/loja/banner-loja.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 37.5%;
+  margin-right: 30px;
+}
+
+.loja-txt{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 41.5%;
+}
+
+.loja-txt h1 {
+  color: white;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  line-height: 55px;
+  color: white;
+  font-size: 50px;
+  padding: 0px 0px 10px 20px ;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(56, 63, 83, 0.6); 
+  padding: 0 10px;
+}
+
+.loja-txt p {
+  font-size: 20px;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  text-align: left;
+}
+
+.loja-txt-btn{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.loja-txt-btn a{
+  color: white;
+  text-decoration: none;
+  padding: 5px 40px;
+}
+
+.loja-txt-btn a:first-of-type{
+  background-color: #383F53F3;
+  color: white;
+}
+
+.loja-txt-btn a:nth-of-type(2){
+  border: 1px solid #383F53F3;
+}
+
+/* Loja (Carrossel) */
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 30px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* Container principal do Swiper */
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  position: relative;
+  padding-bottom: 45px;
+  overflow-x: hidden;
+  color: black;
+}
+
+.card-img-size {
+  background-position: center;
+  background-size: cover;
+}
+
+/* Área que contém os slides */
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.4s ease-out;
+}
+
+/* Slide individual */
+.swiper-slide {
+  flex-shrink: 0;
+  width: 0;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  box-sizing: border-box;
+  border: 2px solid rgba(56, 63, 83, 0.2);
+  background-color: #383F53F3;
+  border-radius: 10px;
+}
+
+/* Paginação (bolinhas) */
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+  border: 2px solid white;
+}
+
+/* Controles de navegação */
+.swiper-navigation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: white;
+  color: #383F53F3;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 0.7em;
+}
+
+/* Estados desabilitados */
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+}
+
+/* Exibe os botões ao passar o mouse no container */
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  opacity: 1;
+}
+
+/* Posição dos botões */
+.swiper-button-prev {
+  left: 0;
+  bottom: 0;
+}
+
+.swiper-button-next {
+  left: 40px;
+  bottom: 0;
+}
