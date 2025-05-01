@@ -242,7 +242,7 @@ nav {
   display: flex;
   justify-content: center;
   height: 600px;
-  margin-bottom: 500px;
+  margin-bottom: 220px;
 }
 
 .story-txt{
@@ -468,4 +468,128 @@ video {
   width: 100%;       
   height: 100%; 
   object-fit: cover;
+}
+
+/* AGENDA (Timeline)*/
+#calendario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
+}
+
+.agenda {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin-bottom: 220px;
+}
+
+.agenda::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #383F53F3;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.agenda-item {
+  position: relative;
+  width: 46.5%;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.agenda-left {
+  text-align: right;
+  left: 0;
+}
+
+.agenda-left img{
+  margin-left: 7px;
+}
+
+.agenda-right {
+  text-align: left;
+  left: 50%;
+}
+
+.agenda-right img{
+  margin-right: 7px;
+}
+
+.agenda-logo{
+  width: 40px;
+}
+
+.agenda-content {
+  background-color: #000;
+  border: 1px solid #383F53F3;
+  padding: 1rem;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 0 10px #383F53F3;
+  transition: all 0.3s ease;
+}
+
+.agenda-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #A3B8F3;
+}
+
+.agenda-content::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+}
+
+.agenda-left .agenda-content::after {
+  right: -16px;
+  border-left-color: #383F53F3;
+}
+
+.agenda-right .agenda-content::after {
+  left: -16px;
+  border-right-color: #383F53F3;
+}
+
+.agenda-date {
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.agenda-event {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.agenda-event-left {
+  justify-content: start;
+}
+
+.agenda-event-right {
+  justify-content: end;
+}
+
+.agenda-subtext {
+  display: block;
+  margin-top: 0.5rem;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.agenda-event-02 {
+  margin-top: 15px;
 }
