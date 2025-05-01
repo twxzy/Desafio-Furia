@@ -7,6 +7,21 @@ html {
   scroll-behavior: smooth;
 }
 
+#mainNav {
+  background-color: transparent;
+  transition:
+    background-color 0.4s ease,
+    backdrop-filter 0.4s ease,
+    box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+/* Quando rolar a página */
+#mainNav.scrolled {
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+}
+
 body {
   background-color: #000;
 }
@@ -132,7 +147,7 @@ nav {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  margin-bottom: 150px;
+  margin-bottom: 220px;
 }
 
 .hero-title-emphasis {

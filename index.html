@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -24,7 +24,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top custom-navbar position-fixed w-100">
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top custom-navbar position-fixed w-100">
     <div class="container">
 
       <!-- Furia Logo -->
@@ -101,7 +101,7 @@
   </section>
 
   <!-- Comunidade -->
-  <section class="story">
+  <section class="story" data-aos="fade-up">
     <div class="story-txt">
       <p>O sucesso é mais doce quando compartilhado.</p>
 
@@ -139,7 +139,7 @@
     <section class="agenda">
   
       <!-- 01 Esquerda -->
-      <div class="agenda-item agenda-left">
+      <div class="agenda-item agenda-left" data-aos="fade-right">
         <div class="agenda-content">
           <div class="agenda-date">14/08</div>
           <div class="agenda-event agenda-event-right">
@@ -154,7 +154,7 @@
       </div>
   
       <!-- 02 Direita -->
-      <div class="agenda-item agenda-right">
+      <div class="agenda-item agenda-right" data-aos="fade-left">
         <div class="agenda-content">
           <div class="agenda-date">15/08</div>
           <div class="agenda-event agenda-event-left">
@@ -165,7 +165,7 @@
       </div>
   
       <!-- 03 Esquerda -->
-      <div class="agenda-item agenda-left">
+      <div class="agenda-item agenda-left" data-aos="fade-right">
         <div class="agenda-content">
           <div class="agenda-date">16/08</div>
           <div class="agenda-event agenda-event-right">
@@ -180,7 +180,7 @@
       </div>
   
       <!-- 04 Direita -->
-      <div class="agenda-item agenda-right">
+      <div class="agenda-item agenda-right" data-aos="fade-left">
         <div class="agenda-content">
           <div class="agenda-date">17/08</div>
           <div class="agenda-event agenda-event-left">
@@ -195,7 +195,7 @@
       </div>
   
       <!-- 05 Esquerda -->
-      <div class="agenda-item agenda-left">
+      <div class="agenda-item agenda-left" data-aos="fade-right">
         <div class="agenda-content">
           <div class="agenda-date">19/08</div>
           <div class="agenda-event agenda-event-right">
@@ -210,7 +210,7 @@
       </div>
   
       <!-- 06 Direita -->
-      <div class="agenda-item agenda-right">
+      <div class="agenda-item agenda-right" data-aos="fade-left">
         <div class="agenda-content">
           <div class="agenda-date">25/08</div>
           <div class="agenda-event agenda-event-left">
@@ -225,7 +225,7 @@
       </div>
   
       <!-- 07  Esquerda -->
-      <div class="agenda-item agenda-left">
+      <div class="agenda-item agenda-left" data-aos="fade-right">
         <div class="agenda-content">
           <div class="agenda-date">28/08</div>
           <div class="agenda-event agenda-event-right">
@@ -243,7 +243,7 @@
   </section>
 
   <!-- Loja -->
-  <section id="loja" class="loja">
+  <section id="loja" class="loja" data-aos="fade-up">
     <div class="loja-img">
       <!-- Imagem pode ser adicionada aqui, se necessário -->
     </div>
@@ -440,6 +440,14 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // duração da animação
     });
   </script>
 
