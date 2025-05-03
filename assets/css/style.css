@@ -1,11 +1,21 @@
-/* Google Fonts */
+/* ======================= */
+/*      GOOGLE FONTS       */
+/* ======================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Scroll Custom */
+/* ======================= */
+/*      SCROLL CUSTOM      */
+/* ======================= */
+
 html {
   scroll-behavior: smooth;
 }
+
+/* ======================= */
+/*   NAVBAR EFFECT SCROLL  */
+/* ======================= */
 
 #mainNav {
   background-color: transparent;
@@ -16,7 +26,6 @@ html {
   z-index: 1000;
 }
 
-/* Quando rolar a página */
 #mainNav.scrolled {
   background-color: rgba(0, 0, 0, 1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
@@ -26,14 +35,20 @@ body {
   background-color: #000;
 }
 
-/* Reset Basic */
+/* ======================= */
+/*      RESET BASÍCO       */
+/* ======================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Navbar */
+/* ======================= */
+/*     NAVBAR PRINCIPAL    */
+/* ======================= */
+
 nav {
   height: 80px;
   z-index: 60;
@@ -73,7 +88,7 @@ nav {
 }
 
 .nav-link:focus {
-  color: red;
+  color: white;
 }
 
 .draw-btn {
@@ -115,7 +130,10 @@ nav {
   color: white;
 }
 
-/* Navbar Vertical */
+/* ======================= */
+/*    NAVBAR VERTICAL      */
+/* ======================= */
+
 .navbar-vertical {
   width: 80px;
   display: flex;
@@ -137,17 +155,31 @@ nav {
 
 .navbar-vertical a:hover {
   transform: scale(1.2);
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
-/* Hero Section */
+/* ======================= */
+/*      HERO SECTION       */
+/* ======================= */
+
 .hero {
   position: relative;
-  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/7ab856224265583.680813b7b7754.png');
+  background-image: url('../img/hero/hero-img.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
   margin-bottom: 220px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  padding: 50px;
 }
 
 .hero-title-emphasis {
@@ -155,7 +187,7 @@ nav {
 }
 
 .hero-fade {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 1) 100%);
   position: relative;
   padding: 20px;
   box-shadow: inset 0 -6px 6px rgba(0, 0, 0, 0.1);
@@ -194,7 +226,10 @@ nav {
   z-index: 2;
 }
 
-/* Btn custom (Conheça a Nação) */
+/* ======================= */
+/*  BTN (CONHEÇA A NAÇÃO)  */
+/* ======================= */
+
 * {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -252,7 +287,10 @@ nav {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/*Comunidade*/
+/* ======================= */
+/*       COMUNIDADE        */
+/* ======================= */
+
 .story{
   display: flex;
   justify-content: center;
@@ -294,7 +332,10 @@ nav {
   line-height: 29.5px;
 }
 
-/* Comunidade (Btn Discord Animation)*/
+/* ======================= */
+/*  BTN DISCORD ANIMATION  */
+/* ======================= */
+
 .discord-buttons {
   display: flex;
   justify-content: space-around;
@@ -384,7 +425,6 @@ nav {
   width: 100%;
   height: 100%;
   font-family: "Inconsolata", monospace;
-  
   font-weight: 500;
 }
 
@@ -474,7 +514,10 @@ nav {
   outline: 0;
 }
 
-/* Comunidade (Video)*/
+/* ======================= */
+/*    COMUNIDADE VIDEO     */
+/* ======================= */
+
 .story-video{
   width: 57%;
 }
@@ -485,7 +528,10 @@ video {
   object-fit: cover;
 }
 
-/* AGENDA (Timeline)*/
+/* ======================= */
+/*    CALENDARIO FURIA     */
+/* ======================= */
+
 #calendario-container {
   display: flex;
   justify-content: center;
@@ -609,7 +655,10 @@ video {
   margin-top: 15px;
 }
 
-/* Loja */
+/* ======================= */
+/*      LOJA FURIA         */
+/* ======================= */
+
 .loja{
   display: flex;
   justify-content: center;
@@ -679,7 +728,9 @@ video {
   border: 1px solid #383F53F3;
 }
 
-/* Loja (Carrossel) */
+/* ======================= */
+/*  LOJA FURIA (CARROSSEL) */
+/* ======================= */
 .container-card {
   display: flex;
   justify-content: center;
@@ -691,7 +742,6 @@ video {
   color: #fff;
 }
 
-/* Container principal do Swiper */
 .swiper-container {
   display: flex;
   justify-content: center;
@@ -707,13 +757,11 @@ video {
   background-size: cover;
 }
 
-/* Área que contém os slides */
 .swiper-wrapper {
   display: flex;
   transition: transform 0.4s ease-out;
 }
 
-/* Slide individual */
 .swiper-slide {
   flex-shrink: 0;
   width: 0;
@@ -728,7 +776,6 @@ video {
   border-radius: 10px;
 }
 
-/* Paginação (bolinhas) */
 .swiper-pagination {
   position: absolute;
   bottom: 0;
@@ -753,7 +800,6 @@ video {
   border: 2px solid white;
 }
 
-/* Controles de navegação */
 .swiper-navigation {
   position: absolute;
   bottom: 0;
@@ -794,20 +840,17 @@ video {
   font-size: 0.7em;
 }
 
-/* Estados desabilitados */
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
   cursor: auto;
 }
 
-/* Exibe os botões ao passar o mouse no container */
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
   opacity: 1;
 }
 
-/* Posição dos botões */
 .swiper-button-prev {
   left: 0;
   bottom: 0;
@@ -818,7 +861,10 @@ video {
   bottom: 0;
 }
 
-/* AD */
+/* ======================= */
+/*    PATROCINADORES       */
+/* ======================= */
+
 .brand-section {
   background-color: #000;
   padding: 60px 0;
@@ -848,7 +894,10 @@ video {
   transform: scale(1.05);
 }
 
-/* Footer */
+/* ======================= */
+/*      FOOTER             */
+/* ======================= */
+
 .footer-custom {
   background: linear-gradient(180deg, #000 0%, #000 100%);
   color: #e0e0e0;
@@ -943,10 +992,4 @@ video {
     font-size: 1.1rem;
     margin-right: 15px;
   }
-}
-
-.tes{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }

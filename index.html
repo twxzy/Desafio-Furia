@@ -17,7 +17,10 @@
 
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
+  
+  <!-- ChatBot -->
+  <link rel="stylesheet" href="assets/css/chatbot.css">
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,7 +31,7 @@
     <div class="container">
 
       <!-- Furia Logo -->
-      <a class="navbar-brand" href="#Logo">
+      <a id="scroll-btn-inicio" class="navbar-brand" href="#hero">
         <img class="furia-logo" src="assets/img/logo/logo-furia.png" alt="Furia Logo">
       </a>
 
@@ -41,22 +44,53 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto custom-navbar-nav">
           <li class="nav-item custom-nav-item">
-            <a class="nav-link custom-nav-link draw-btn" href="#sobre">Sobre</a>
+            <a id="scroll-btn-comunidade" class="nav-link custom-nav-link draw-btn" href="#comunidade">Comunidade</a>
           </li>
           <li class="nav-item custom-nav-item">
-            <a class="nav-link custom-nav-link draw-btn" href="#loja">Loja</a>
+            <a id="scroll-btn-eventos" class="nav-link custom-nav-link draw-btn" href="#eventos">Eventos</a>
           </li>
           <li class="nav-item custom-nav-item">
-            <a class="nav-link custom-nav-link draw-btn" href="#eventos">Eventos</a>
-          </li>
-          <li class="nav-item custom-nav-item">
-            <a class="nav-link custom-nav-link draw-btn" href="#contato">Siga a FURIA</a>
+            <a id="scroll-btn-loja" class="nav-link custom-nav-link draw-btn" href="#loja">Loja</a>
           </li>
         </ul>
       </div>
 
     </div>
   </nav>
+
+  <!-- ChatBot-->
+  <div id="chat-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFFFFF" width="30px" height="30px">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 14H5.17L4 17.17V4h16v12z"/>
+      <path d="M6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"/>
+    </svg>
+  </div>
+
+  <div id="chat-window" class="hidden">
+    <div class="chat-header">
+        <div class="header-title">
+              <i class="bi bi-robot header-icon"></i>
+              <span>Assistente FURIA</span>
+        </div>
+        <div class="header-actions">
+            <button id="clear-chat-btn" title="Limpar conversa" aria-label="Limpar conversa">
+                <i class="bi bi-trash3"></i>
+            </button>
+            <button id="close-chat-btn" title="Fechar chat" aria-label="Fechar chat">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+    </div>
+    <div id="chat-body" aria-live="polite">
+          <div id="loading-message" class="chat-message" style="text-align: center; display: none;">Carregando...</div>
+          </div>
+    <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Digite aqui..." aria-label="Digite sua mensagem">
+        <button id="send-chat-btn" aria-label="Enviar mensagem">
+              <i class="bi bi-send-fill"></i>
+        </button>
+    </div>
+  </div>
 
   <!-- Navbar Vertical -->
   <div class="navbar-vertical">
@@ -78,9 +112,9 @@
   </div>
 
   <!-- Hero Section -->
-  <section class="hero text-white d-flex align-items-center justify-content-center text-center">
+  <section class="hero text-white d-flex align-items-center justify-content-center text-center parallax">
       
-    <!-- Hero Fade Overlay -->
+    <!-- Hero Fade Overlay Black -->
     <div class="hero-fade"></div>
     
     <!-- Hero Content -->
@@ -90,8 +124,8 @@
       </h1>
       <p class="lead"><span>Você</span> <span id="typed-text"></span></p>
       
-      <!-- Button -->
-      <a class="btnfos btnfos-1">
+      <!-- Button ( Conheça a Nação ) -->
+      <a onclick="nacaoBtn()" class="btnfos btnfos-1">
         <svg>
           <rect x="0" y="0" fill="none" width="100%" height="100%"/>
         </svg>
@@ -101,7 +135,7 @@
   </section>
 
   <!-- Comunidade -->
-  <section class="story" data-aos="fade-up">
+  <section class="story content" data-aos="fade-up">
     <div class="story-txt">
       <p>O sucesso é mais doce quando compartilhado.</p>
 
@@ -120,6 +154,7 @@
 
       <div class="d-flex justify-content-center">
         <div class="discord-buttons">
+          <!-- Discord Button -->
           <button id="discord-btn" onclick="window.open('https://discord.com/invite/furia', '_blank')"class="discord-btn">
             <span></span>
             <p data-start="Join the Discord!" data-text="Discord" data-title="Discord"></p>
@@ -128,6 +163,7 @@
       </div>
     </div>
 
+    <!-- Video Furia Behind -->
     <div class="story-video">
       <video autoplay loop muted>
         <source src="assets/img/video/furia behind.mp4" type="video/mp4">
@@ -135,6 +171,7 @@
     </div>
   </section>
 
+  <!-- Agenda Furia -->
   <section id="calendario-container">
     <section class="agenda">
   
@@ -242,11 +279,11 @@
     </section>
   </section>
 
-  <!-- Loja -->
-  <section id="loja" class="loja" data-aos="fade-up">
-    <div class="loja-img">
-      <!-- Imagem pode ser adicionada aqui, se necessário -->
-    </div>
+  <!-- Loja Furia -->
+  <section class="loja" data-aos="fade-up">
+    
+    <!-- Banner Loja -->
+    <div class="loja-img"></div>
 
     <div class="loja-txt">
       <h1>
@@ -303,7 +340,7 @@
             </a>
           </div>
 
-          <!-- Navegação do Swiper -->
+          <!-- Navegação do Swiper ( Carrossel ) -->
           <div class="swiper-navigation" style="width: 100%;">
             <div class="swiper-pagination" style="display: flex; justify-content: end;"></div>
             <div class="swiper-button-prev"></div>
@@ -447,12 +484,14 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 1000, // duração da animação
+      duration: 1000,
     });
   </script>
 
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
+
+  <script src="assets/js/chatbot.js"></script>
 
 </body>
 </html>

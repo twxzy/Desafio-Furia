@@ -1,0 +1,74 @@
+{
+  "csgo": {
+    "id": "csgo",
+    "name": "CS:GO",
+    "roster_info": "Fallen, KSCERATO, yuurih, arT, chelo (Verifique sempre o <a href='https://furia.gg/teams/csgo' target='_blank' rel='noopener noreferrer'>site oficial</a>!)",
+    "schedule_link": "https://www.hltv.org/team/8297/furia#tab-matchesBox",
+    "schedule_source": "HLTV.org",
+    "achievements": [
+      "Classificações para Majors",
+      "Títulos NA (ESL, ECS)",
+      "Top 4 IEM Rio Major 2022"
+    ]
+  },
+  "valorant": {
+    "id": "valorant",
+    "name": "Valorant (Masc.)",
+    "roster_info": "mwzera, Khalil, nzr, havoc, kon4n (Confira o <a href='https://furia.gg/teams/valorant' target='_blank' rel='noopener noreferrer'>site oficial</a>!)",
+    "schedule_link": "https://www.vlr.gg/team/2406/furia/?tab=matches",
+    "schedule_source": "VLR.gg",
+    "achievements": [
+      "Participação VCT Americas",
+      "Resultados expressivos BR/INT",
+      "Classificação LOCK//IN"
+    ]
+  },
+  "valorant_gc": {
+    "id": "valorant_gc",
+    "name": "Valorant GC (Fem.)",
+    "roster_info": "bstrdd, bizinha, Gabi, Krysme, Jubs (Veja no <a href='https://furia.gg/teams/valorant-gc' target='_blank' rel='noopener noreferrer'>site oficial</a>!)",
+    "schedule_link": "https://www.vlr.gg/team/5771/furia-esports-female/?tab=matches",
+    "schedule_source": "VLR.gg",
+    "achievements": [
+      "Múltiplos títulos VCT GC Brazil",
+      "Participação Game Changers Championship",
+      "Dominância cenário BR"
+    ]
+  },
+  "lol": {
+    "id": "lol",
+    "name": "League of Legends",
+    "roster_info": "Destroyer, Mir, Tutsz, Ayu, zay (Confira sempre o <a href='https://furia.gg/teams/league-of-legends' target='_blank' rel='noopener noreferrer'>site oficial</a>!)",
+    "schedule_link": "https://lolesports.com/schedule?leagues=cblol",
+    "schedule_source": "lolesports.com (CBLOL)",
+    "achievements": [
+      "Participação contínua no CBLOL",
+      "Chegada aos playoffs",
+      "Revelação de talentos"
+    ]
+  },
+  "rl": {
+    "id": "rl",
+    "name": "Rocket League",
+    "roster_info": "yanxnz, drufinho, Bemmz (Confirme no <a href='https://furia.gg/teams/rocket-league' target='_blank' rel='noopener noreferrer'>site oficial</a>!)",
+    "schedule_link": "https://liquipedia.net/rocketleague/FURIA_Esports#Matches",
+    "schedule_source": "Liquipedia",
+    "achievements": [
+      "Títulos RLCS South America",
+      "Participações RLCS World Championship",
+      "Top SA Team"
+    ]
+  },
+  "r6": {
+    "id": "r6",
+    "name": "Rainbow Six",
+    "roster_info": "Kheyze, Herdsz, Nade, Handyy, Jv92 (Verifique o <a href='https://furia.gg/teams/rainbow-six-siege' target='_blank' rel='noopener noreferrer'>site oficial</a>!)",
+    "schedule_link": "https://liquipedia.net/rainbowsix/FURIA_Esports#Matches",
+    "schedule_source": "Liquipedia",
+    "achievements": [
+      "Participação BR6",
+      "Classificação Six Invitational/Majors",
+      "Resultados consistentes BR"
+    ]
+  }
+}
