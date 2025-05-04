@@ -6,7 +6,7 @@ Este repositório contém o código da **Landing Page** desenvolvida para o desa
 
 ## Tecnologias
 
-- **HTML5** | **CSS3** | - **Bootstrap** | **JavaScript**
+- **HTML5** | **CSS3** | **Bootstrap** | **JavaScript**
 
 ## Funcionalidades
 
